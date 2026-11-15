@@ -1,0 +1,680 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "30908961-4fd1-4b3f-9115-b821ae58ad94",
+   "metadata": {},
+   "source": [
+    "1. Take a number from the user and check whether it is positive or negative."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "9933ae4f-803e-4bcf-92ef-7089e3f62167",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your number : 45\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Positive\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_number(number):\n",
+    "    if number > 0:\n",
+    "        return \"Positive\"\n",
+    "    else:\n",
+    "        return \"Neg\"\n",
+    "\n",
+    "user_input = int(input(\"Enter your number :\"))\n",
+    "print(check_number(user_input))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0065be40-52ff-4dfc-80e0-058fbe28f51d",
+   "metadata": {},
+   "source": [
+    "2. Take a number and check whether it is even or odd."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "f40f80f5-f816-4380-b976-944353b09ccd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your number : 60\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "even\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_number(number):\n",
+    "    if number % 2 == 0:\n",
+    "        return \"even\"\n",
+    "    else:\n",
+    "        return \"odd\"\n",
+    "\n",
+    "user_input = int(input(\"Enter your number :\"))\n",
+    "print(check_number(user_input))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "70c574f1-8afa-4645-bd77-7d9bde21cd2c",
+   "metadata": {},
+   "source": [
+    "3. Take a number and check whether it is greater than 10 or not."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "890743d9-62e6-4674-9fc0-16a20feb8ccd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your number : 15\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "pass\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_number(number):\n",
+    "    if number > 10:\n",
+    "        return \"pass\"\n",
+    "    else:\n",
+    "        return\"fail\"\n",
+    "\n",
+    "user_input = int(input(\"Enter your number :\"))\n",
+    "print(check_number(user_input))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "82c16692-dd0c-4bb0-8792-811386fc75bc",
+   "metadata": {},
+   "source": [
+    "4. Take age as input and check whether the person is eligible to vote."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "144fb199-1c6d-4af6-b2be-abdd2fe4f83b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your number : 20\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "eligible\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_number(number):\n",
+    "    if number > 18:\n",
+    "        return \"eligible\"\n",
+    "    else:\n",
+    "        return \"ineligible\"\n",
+    "\n",
+    "user_input = int(input(\"Enter your number :\"))\n",
+    "print(check_number(user_input))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ac2dbaf9-8e29-4dff-80db-c4b766249559",
+   "metadata": {},
+   "source": [
+    "5. Take marks as input and check whether the student passed or failed (passing\n",
+    "marks = 40)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "c16962ef-17bb-49e3-8188-909aa534b4a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your number: 45\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "pass\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_number(number):\n",
+    "    if number > 40:\n",
+    "        return \"pass\"\n",
+    "    else:\n",
+    "        return \"fail\"\n",
+    "\n",
+    "user_input = int(input(\"Enter your number:\"))\n",
+    "print(check_number(user_input))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "290cc949-5f00-4f6f-b7ca-625f9f0c348f",
+   "metadata": {},
+   "source": [
+    "6. Take two numbers and print which one is greater."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "b58ff5be-8b01-404e-9c45-b5e8d644d0c5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter first number : 45\n",
+      "Enter second number : 52\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Second number is greater\n"
+     ]
+    }
+   ],
+   "source": [
+    "def greater_number(num1, num2):\n",
+    "    if num1 > num2:\n",
+    "        return \"First number is greater\"\n",
+    "    elif num2 > num1:\n",
+    "        return \"Second number is greater\"\n",
+    "    else: \n",
+    "        return \"Both number the equal\"\n",
+    "\n",
+    "number1 = int(input(\"Enter first number :\"))\n",
+    "number2 = int(input(\"Enter second number :\"))\n",
+    "\n",
+    "print(greater_number(number1, number2))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8a25adaf-a65f-4ba6-8f4e-11f903e031d8",
+   "metadata": {},
+   "source": [
+    "7. Take a number and check whether it is divisible by 5."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "ffe697f2-7d57-4f41-83a3-68fc32b6bcb5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your number 50\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Divisible by 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_number(number):\n",
+    "    if number %5 == 0:\n",
+    "        return \"Divisible by 5\"\n",
+    "    else:\n",
+    "        return \"Not Divisible by 5\"\n",
+    "\n",
+    "user_input = int(input(\"Enter your number\"))\n",
+    "print(check_number(user_input))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b43a1373-7407-4272-99f5-fe51ee20af2a",
+   "metadata": {},
+   "source": [
+    "8. Take a number and check whether it is zero or not."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "e2c1a325-aa10-49ad-98d9-ec7bae6ebf27",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter Your Number 12\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_number(number):\n",
+    "    if number == 0:\n",
+    "        return \"True\"\n",
+    "    else:\n",
+    "        return \"False\"\n",
+    "\n",
+    "user_input = int(input(\"Enter Your Number\"))\n",
+    "print(check_number(user_input))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8bea099c-ef77-4916-b198-928c7e1c5819",
+   "metadata": {},
+   "source": [
+    "9. Take three numbers and find the largest among them."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "102bdc1d-0b45-426c-bd00-b4a72983e739",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter first number : 45\n",
+      "Enter second number : 12\n",
+      "Enter third numer : 35\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "First number is greater\n"
+     ]
+    }
+   ],
+   "source": [
+    "def greater_number(num1, num2, num3):\n",
+    "    if num1 > num2 and num3:\n",
+    "        return\"First number is greater\"\n",
+    "    elif num2 > num1 and num3:\n",
+    "        return\"Second number is greater\"\n",
+    "    elif num3 > num1 and num2:\n",
+    "        return\"Third number is greater\"\n",
+    "\n",
+    "number1 = int(input(\"Enter first number :\"))\n",
+    "number2 = int(input(\"Enter second number :\"))\n",
+    "number3 = int(input(\"Enter third numer :\"))\n",
+    "\n",
+    "print(greater_number(number1, number2, number3))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ce8bf54c-18fe-48ed-8cbb-e32eed40bbef",
+   "metadata": {},
+   "source": [
+    "10. Take a year as input and check whether it is a leap year."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "71c1ae91-92e5-4dc9-b2a2-a55f29cb02ae",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the year : 2028\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Leap Year\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_number(year):\n",
+    "    if year % 400 == 0:\n",
+    "        return \"Leap Year\"\n",
+    "    elif year % 100 == 0:\n",
+    "        return \"Not a Leap Year\"\n",
+    "    elif year % 4 == 0:\n",
+    "        return \"Leap Year\"\n",
+    "    else:\n",
+    "        return \"Not a Leap Year\"\n",
+    "\n",
+    "user_input = int(input(\"Enter the year :\"))\n",
+    "print(check_year(user_input))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7759b118-68a3-4f2e-8337-d1e1cb0650d5",
+   "metadata": {},
+   "source": [
+    "11. Take marks and assign grade:\n",
+    " 90 and above → A\n",
+    " 75 to 89 → B\n",
+    " 50 to 74 → C\n",
+    " Below 50 → Fail"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "c139ad1a-67bb-4f03-9fe3-73ec81cf861d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your marks : 56\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Grade C\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_grade(marks):\n",
+    "    if marks >= 90:\n",
+    "        return \"Grade A\"\n",
+    "    elif marks >= 75:\n",
+    "        return \"Grade B\"\n",
+    "    elif marks >= 50:\n",
+    "        return \"Grade C\"\n",
+    "    else:\n",
+    "        return \"Fail\"\n",
+    "\n",
+    "user_input = int(input(\"Enter your marks :\"))\n",
+    "print(check_grade(user_input))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bb03745a-7533-4c6c-9677-84b3bb1e106c",
+   "metadata": {},
+   "source": [
+    "12. Take a character as input and check whether it is a vowel or consonant."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "f0058507-191a-4486-a2aa-4b0069abe3a0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a character : a\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Vowel\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_character(char):\n",
+    "    if char in \"aeiouAEIOU\":\n",
+    "        return \"Vowel\"\n",
+    "    else:\n",
+    "        return \"Consonant\"\n",
+    "\n",
+    "user_input = input(\"Enter a character :\")\n",
+    "print(check_character(user_input))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "db567095-43de-4ea5-92a0-b8b8548e80f0",
+   "metadata": {},
+   "source": [
+    "13. Take two numbers and find the smallest among them."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "9382f14a-a19f-4fa2-b74a-e08474882f23",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter first number : 15\n",
+      "Enter second number : 50\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "First number is Smallest\n"
+     ]
+    }
+   ],
+   "source": [
+    "def smallest_number(num1, num2):\n",
+    "    if num1 < num2:\n",
+    "        return \"First number is Smallest\"\n",
+    "    elif num2 < num1:\n",
+    "        return \"Second number is Smallest\"\n",
+    "    else:\n",
+    "        return \"Both numbers are Equal\"\n",
+    "\n",
+    "number1 = int(input(\"Enter first number :\"))\n",
+    "number2 = int(input(\"Enter second number :\"))\n",
+    "\n",
+    "print(smallest_number(number1, number2))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cdedeff1-0702-41f4-84b7-09ef0002d3e6",
+   "metadata": {},
+   "source": [
+    "14. Take a number and check whether it is a multiple of both 3 and 7."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "244e5748-9b09-481a-b1e0-da15eaf43309",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a number:  21\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The number is a multiple of both 3 and 7.\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_multiple(num):\n",
+    "    if num % 3 == 0 and num % 7 == 0:\n",
+    "        print(\"The number is a multiple of both 3 and 7.\")\n",
+    "    else:\n",
+    "        print(\"The number is not a multiple of both 3 and 7.\")\n",
+    "\n",
+    "n = int(input(\"Enter a number: \"))\n",
+    "check_multiple(n)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9968a3d8-67ff-43ca-bd7f-f1d749e46fe2",
+   "metadata": {},
+   "source": [
+    "15. Create a simple calculator:\n",
+    "\n",
+    ". Take two numbers and an operator (+, -, *, /)\n",
+    ". Perform operation based on user input."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "2048e180-739b-4f07-ab2a-cccba7baa825",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter first number:  25\n",
+      "Enter second number:  25\n",
+      "Enter operator (+, -, *, /):  *\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Result = 625.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "def calculator(a, b, op):\n",
+    "    if op == '+':\n",
+    "        print(\"Result =\", a + b)\n",
+    "    elif op == '-':\n",
+    "        print(\"Result =\", a - b)\n",
+    "    elif op == '*':\n",
+    "        print(\"Result =\", a * b)\n",
+    "    elif op == '/':\n",
+    "        if b != 0:\n",
+    "            print(\"Result =\", a / b)\n",
+    "        else:\n",
+    "            print(\"Cannot divide by zero.\")\n",
+    "    else:\n",
+    "        print(\"Invalid operator.\")\n",
+    "\n",
+    "num1 = float(input(\"Enter first number: \"))\n",
+    "num2 = float(input(\"Enter second number: \"))\n",
+    "operator = input(\"Enter operator (+, -, *, /): \")\n",
+    "\n",
+    "calculator(num1, num2, operator)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e3ab4e8c-7176-4181-b860-01b390b05581",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.14.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
